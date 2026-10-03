@@ -1,0 +1,193 @@
+.register {
+  min-height: 100vh;
+  padding: 160px 40px;
+
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 100px;
+  align-items: center;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.register-header {
+  max-width: 800px;
+}
+
+.register-label {
+  margin-bottom: 24px;
+
+  font-family: monospace;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+
+  color: rgba(245, 245, 245, 0.45);
+}
+
+.register-header h2 {
+  font-size: clamp(52px, 8vw, 120px);
+  line-height: 0.85;
+  letter-spacing: -0.07em;
+}
+
+.register-description {
+  max-width: 500px;
+  margin-top: 40px;
+
+  font-size: 18px;
+  line-height: 1.7;
+
+  color: rgba(245, 245, 245, 0.55);
+}
+
+.register-form {
+  width: 100%;
+  max-width: 500px;
+}
+
+.form-group {
+  margin-bottom: 28px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+
+  font-family: monospace;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+
+  color: rgba(245, 245, 245, 0.45);
+}
+
+.form-group input {
+  width: 100%;
+  padding: 18px 0;
+
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  outline: none;
+
+  background: transparent;
+  color: #ffffff;
+
+  font-size: 16px;
+
+  transition: border-color 0.25s ease;
+}
+.form-group input:focus {
+  border-color: rgba(255, 255, 255, 0.8);
+
+  background: rgba(255, 255, 255, 0.04);
+
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.08),
+    0 0 25px rgba(255, 255, 255, 0.06);
+
+  transform: translateX(4px);
+}
+
+.form-group input::placeholder {
+  color: rgba(245, 245, 245, 0.25);
+}
+
+.form-group input::placeholder {
+  color: rgba(245, 245, 245, 0.25);
+
+  font-family: monospace;
+}
+
+.register-button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 18px 24px;
+
+  border: 1px solid rgba(255, 255, 255, 0.35);
+
+  background: #ffffff;
+  color: #050505;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.register-button:hover {
+  background: transparent;
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+.register-success {
+  margin-top: 24px;
+
+  font-family: monospace;
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: 0.08em;
+
+  color: rgba(245, 245, 245, 0.7);
+}
+@media (max-width: 768px) {
+  .register {
+    min-height: auto;
+    padding: 100px 20px;
+
+    display: block;
+  }
+
+  .register-header {
+    max-width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .register-header h2 {
+    font-size: clamp(42px, 12vw, 72px);
+  }
+
+  .register-description {
+    margin-top: 28px;
+    font-size: 16px;
+  }
+
+  .register-form {
+    max-width: 100%;
+  }
+
+  .form-group {
+    margin-bottom: 24px;
+  }
+
+  .form-group input {
+  width: 100%;
+
+  padding: 18px 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  outline: none;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  color: #ffffff;
+
+  font-family: monospace;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+
+  transition:
+    border-color 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+  .register-button {
+    padding: 16px 18px;
+    font-size: 11px;
+  }
+}
