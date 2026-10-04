@@ -80,7 +80,7 @@ src/
 ### 1. Clone the repository
 
 ```bash
-git clone <your-github-repository-url>
+git clone [<your-github-repository-url>](https://github.com/DevLabs26/the-last-commit.git)
 ```
 
 ### 2. Enter the project
